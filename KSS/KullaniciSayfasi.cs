@@ -16,5 +16,10 @@ namespace KSS
         {
             InitializeComponent();
         }
+
+        private void KullaniciSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
