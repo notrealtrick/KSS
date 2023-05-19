@@ -16,5 +16,28 @@ namespace KSS
         {
             InitializeComponent();
         }
+
+        private void bunifuSeparator2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ilanlar_Load(object sender, EventArgs e)
+        {
+            
+        }
+        public void Baslangic()
+        {
+           
+                UC_Ilanlar uc = new UC_Ilanlar();
+                uc.button1.Click += T1_Click;
+                uc.Dock = DockStyle.Top;
+                panel1.Controls.Add(uc);
+            
+        }
+        private void T1_Click(object sender,EventArgs e)
+        {
+
+        }
     }
 }

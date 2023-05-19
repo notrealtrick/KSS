@@ -70,8 +70,47 @@ namespace KSS
 
         private void KayitOl_Load(object sender, EventArgs e)
         {
+            this.Opacity = 96;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
 
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_MouseMove(object sender, MouseEventArgs e)
+        {
+            label2.Visible = true;
+        }
+
+        private void KayitOl_MouseMove(object sender, MouseEventArgs e)
+        {
+            label2.Visible = false;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("KAYIT EKLENDİ");
+        }
+
+        private void txtbox_ad_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

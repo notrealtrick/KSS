@@ -16,5 +16,20 @@ namespace KSS
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void AdminSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
