@@ -149,6 +149,9 @@
     <EmbeddedResource Include="KayitOl.resx">
       <DependentUpon>KayitOl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSayfasi.resx">
+      <DependentUpon>KullaniciSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
