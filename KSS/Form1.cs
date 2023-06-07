@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -104,19 +105,66 @@ namespace KSS
                 this.Hide();
                 
             }
-            if (grs_eposta.Text == "kullanıcı" && grs_sifre.Text == "1111")
+            // Veritabanı bağlantısı oluşturun
+            string connString = "Server=SERVER_NAME;Port=5432;User Id=user;Password=PASSWORD;Database=DATABASE_NAME;";
+            NpgsqlConnection conn = new NpgsqlConnection(connString);
+            conn.Open();
+
+            // SQL sorgunuzu yazın ve sonuçları bir DataTable'a yükleyin
+            string query = "SELECT * FROM uyeler WHERE eposta = @eposta AND sifre = @sifre";
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@eposta", grs_eposta.Text);
+            cmd.Parameters.AddWithValue("@sifre", grs_sifre.Text);
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            // Veritabanından dönen satır sayısına göre işlem yapın
+            if (dt.Rows.Count > 0)
             {
-                Ilanlar i = new Ilanlar();
-                i.Show();
+                // Ilanlar sayfasını açın
+                Ilanlar ilanlarForm = new Ilanlar();
+                ilanlarForm.Show();
                 this.Hide();
             }
+            else
+            {
+                // Kullanıcı adı veya şifre hatalı hatası verin
+                MessageBox.Show("Kullanıcı adı veya şifre hatalı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Bağlantıyı kapatın
+            conn.Close();
         }
+
+
+    
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
             KayitOl a = new KayitOl();
             a.Show();
             this.Hide();
+        }
+
+        private void grs_eposta_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grs_sifre_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

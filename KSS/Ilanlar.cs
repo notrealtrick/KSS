@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,6 +39,45 @@ namespace KSS
         private void T1_Click(object sender,EventArgs e)
         {
 
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=mydb;";
+            NpgsqlConnection conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            string sql = "SELECT ilanbaslik FROM ilanlar";
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                string ilanid = row.Cells["ilanid"].Value.ToString();
+                string sahipid = row.Cells["sahipid"].Value.ToString();
+                string ilanbaslik = row.Cells["ilanbaslik"].Value.ToString();
+                string ilanaciklama = row.Cells["ilanaciklama"].Value.ToString();
+                string ilanfiyat = row.Cells["ilanfiyat"].Value.ToString();
+                string ilanturu = row.Cells["ilanturu"].Value.ToString();
+                string ilantarihi = row.Cells["ilantarihi"].Value.ToString();
+                string pasifaktif = row.Cells["pasifaktif"].Value.ToString();
+                // diğer verileri de burada string olarak tutabilirsiniz
+            }
+        }
+
+
+        private void label_ilanbaslik_Click(object sender, EventArgs e)
+        {
+            //label_ilanbaslik.Text = ilanbaslik;
         }
     }
 }
