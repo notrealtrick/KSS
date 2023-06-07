@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace KSS
         public AdminSayfasi()
         {
             InitializeComponent();
+            UyeleriGetir();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,23 +37,6 @@ namespace KSS
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-         // Veritabanı bağlantısı oluşturun
-            string connString = "Server=postgresql;Port=5432;User Id=melih;Password=melih;Database=KSS;";
-            NpgsqlConnection conn = new NpgsqlConnection(connString);
-            conn.Open();
-
-            // SQL sorgunuzu yazın ve sonuçları bir DataTable'a yükleyin
-            string query = "SELECT * FROM uyeler";
-            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(query, conn);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-
-            // DataGridView bileşenine verileri yükleyin
-            dataGridView1.DataSource = dt;
-
-            // Bağlantıyı kapatın
-            conn.Close();
 
         }
 
@@ -86,6 +71,44 @@ namespace KSS
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+   
+        }
+        void UyeleriGetir()
+        {
+            listView1.Items.Clear();
+            int i = 0;
+            try
+            {
+                // Veritabanı bağlantısı oluşturun
+                string connString = "Server=SERVER_NAME;Port=5432;User Id=user;Password=PASSWORD;Database=DATABASE_NAME;";
+                NpgsqlConnection conn = new NpgsqlConnection(connString);
+                conn.Open();
+
+                // SQL sorgunuzu yazın ve sonuçları bir DataTable'a yükleyin
+                string query = "SELECT * FROM uyeler";
+                NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
+                NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                /* while (true)
+                {
+                    listView1.Items.Addrd["TC"].ToString());
+                    listView1.Items[i].SubItems.Add(rd["Adı"].ToString());
+                    listView1.Items[i].SubItems.Add(rd["Soyadı"].ToString());
+                    listView1.Items[i].SubItems.Add(rd["Cinsiyeti"].ToString());
+                    listView1.Items[i].SubItems.Add(rd["BabaAdı"].ToString());
+                    listView1.Items[i].SubItems.Add(rd["AnneAdı"].ToString());
+                    i++;
+                }*/
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

@@ -16,6 +16,7 @@ namespace KSS
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         
@@ -24,6 +25,7 @@ namespace KSS
         {
             this.Opacity = 90;
         }
+
 
         private void label2_MouseMove(object sender, MouseEventArgs e)
         {
@@ -105,6 +107,44 @@ namespace KSS
                 this.Hide();
                 
             }
+            else {
+                Uye_Girisi();
+            }
+            
+        }
+
+
+    
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            KayitOl a = new KayitOl();
+            a.Show();
+            this.Hide();
+        }
+
+        private void grs_eposta_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grs_sifre_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+        void Uye_Girisi()
+        {
+
             // Veritabanı bağlantısı oluşturun
             string connString = "Server=SERVER_NAME;Port=5432;User Id=user;Password=PASSWORD;Database=DATABASE_NAME;";
             NpgsqlConnection conn = new NpgsqlConnection(connString);
@@ -138,33 +178,5 @@ namespace KSS
         }
 
 
-    
-
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
-        {
-            KayitOl a = new KayitOl();
-            a.Show();
-            this.Hide();
-        }
-
-        private void grs_eposta_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grs_sifre_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuImageButton3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -77,7 +77,7 @@ namespace KSS
 
         private void label_ilanbaslik_Click(object sender, EventArgs e)
         {
-            //label_ilanbaslik.Text = ilanbaslik;
+            label_ilanbaslik.Text = ilanbaslik;
         }
     }
 }
