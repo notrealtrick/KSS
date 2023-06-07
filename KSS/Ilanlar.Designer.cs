@@ -56,12 +56,12 @@
             this.label_ilantur = new System.Windows.Forms.Label();
             this.label_ilantarih = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.label_telno = new System.Windows.Forms.Label();
+            this.label_ilanveren = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label_ilanbaslik = new System.Windows.Forms.Label();
-            this.label_ilanveren = new System.Windows.Forms.Label();
-            this.label_telno = new System.Windows.Forms.Label();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ilanid = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,7 +95,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(23)))), ((int)(((byte)(65)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(163, 618);
@@ -129,17 +129,19 @@
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.bunifuMaterialTextbox1.LineThickness = 3;
             this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(182, 11);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox1.MaxLength = 32767;
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(284, 27);
             this.bunifuMaterialTextbox1.TabIndex = 5;
             this.bunifuMaterialTextbox1.Text = "Ara";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox1.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
             // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(747, 166);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(337, 554);
             this.panel1.TabIndex = 6;
@@ -381,12 +383,32 @@
             this.bunifuCards1.Controls.Add(this.label16);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(536, 426);
-            this.bunifuCards1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuCards1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(287, 182);
             this.bunifuCards1.TabIndex = 27;
+            // 
+            // label_telno
+            // 
+            this.label_telno.AutoSize = true;
+            this.label_telno.Location = new System.Drawing.Point(95, 72);
+            this.label_telno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_telno.Name = "label_telno";
+            this.label_telno.Size = new System.Drawing.Size(41, 13);
+            this.label_telno.TabIndex = 31;
+            this.label_telno.Text = "label10";
+            // 
+            // label_ilanveren
+            // 
+            this.label_ilanveren.AutoSize = true;
+            this.label_ilanveren.Location = new System.Drawing.Point(95, 39);
+            this.label_ilanveren.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_ilanveren.Name = "label_ilanveren";
+            this.label_ilanveren.Size = new System.Drawing.Size(41, 13);
+            this.label_ilanveren.TabIndex = 30;
+            this.label_ilanveren.Text = "label10";
             // 
             // label17
             // 
@@ -416,7 +438,7 @@
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
             this.bunifuImageButton4.Location = new System.Drawing.Point(796, 0);
-            this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(27, 29);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -434,26 +456,6 @@
             this.label_ilanbaslik.TabIndex = 29;
             this.label_ilanbaslik.Text = "label18";
             this.label_ilanbaslik.Click += new System.EventHandler(this.label_ilanbaslik_Click);
-            // 
-            // label_ilanveren
-            // 
-            this.label_ilanveren.AutoSize = true;
-            this.label_ilanveren.Location = new System.Drawing.Point(95, 39);
-            this.label_ilanveren.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_ilanveren.Name = "label_ilanveren";
-            this.label_ilanveren.Size = new System.Drawing.Size(41, 13);
-            this.label_ilanveren.TabIndex = 30;
-            this.label_ilanveren.Text = "label10";
-            // 
-            // label_telno
-            // 
-            this.label_telno.AutoSize = true;
-            this.label_telno.Location = new System.Drawing.Point(95, 72);
-            this.label_telno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_telno.Name = "label_telno";
-            this.label_telno.Size = new System.Drawing.Size(41, 13);
-            this.label_telno.TabIndex = 31;
-            this.label_telno.Text = "label10";
             // 
             // bunifuThinButton22
             // 
@@ -479,6 +481,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(96, 31);
             this.bunifuThinButton22.TabIndex = 30;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // dataGridView1
             // 
@@ -572,7 +575,7 @@
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Ilanlar";
             this.Text = "Ilanlar";
             this.Load += new System.EventHandler(this.Ilanlar_Load);

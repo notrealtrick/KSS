@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,7 @@ namespace KSS
         private void Ilanlar_Load(object sender, EventArgs e)
         {
             
+
         }
         public void Baslangic()
         {
@@ -77,7 +79,29 @@ namespace KSS
 
         private void label_ilanbaslik_Click(object sender, EventArgs e)
         {
-            label_ilanbaslik.Text = ilanbaslik;
+            //label_ilanbaslik.Text = ilanbaslik;
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            string kelime = bunifuMaterialTextbox1.Text;
+
+            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=mydb;";
+            NpgsqlConnection conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            string sql = "SELECT ilanbaslik FROM ilanlar WHERE ilanbaslik= %@arama% ";
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@arama", kelime);
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
