@@ -64,9 +64,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(23)))), ((int)(((byte)(65)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(273, 561);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(205, 456);
             this.bunifuGradientPanel1.TabIndex = 3;
             // 
             // label1
@@ -74,9 +75,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(98, 214);
+            this.label1.Location = new System.Drawing.Point(74, 174);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 46);
+            this.label1.Size = new System.Drawing.Size(60, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "KSS";
             // 
@@ -95,11 +97,10 @@
             this.grs_eposta.LineIdleColor = System.Drawing.Color.Gray;
             this.grs_eposta.LineMouseHoverColor = System.Drawing.Color.DimGray;
             this.grs_eposta.LineThickness = 3;
-            this.grs_eposta.Location = new System.Drawing.Point(482, 170);
-            this.grs_eposta.Margin = new System.Windows.Forms.Padding(4);
+            this.grs_eposta.Location = new System.Drawing.Point(362, 138);
             this.grs_eposta.MaxLength = 32767;
             this.grs_eposta.Name = "grs_eposta";
-            this.grs_eposta.Size = new System.Drawing.Size(379, 33);
+            this.grs_eposta.Size = new System.Drawing.Size(284, 27);
             this.grs_eposta.TabIndex = 4;
             this.grs_eposta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.grs_eposta.OnValueChanged += new System.EventHandler(this.grs_eposta_OnValueChanged);
@@ -121,13 +122,13 @@
             this.grs_sifre.LineIdleColor = System.Drawing.Color.Gray;
             this.grs_sifre.LineMouseHoverColor = System.Drawing.Color.DimGray;
             this.grs_sifre.LineThickness = 3;
-            this.grs_sifre.Location = new System.Drawing.Point(482, 236);
-            this.grs_sifre.Margin = new System.Windows.Forms.Padding(4);
+            this.grs_sifre.Location = new System.Drawing.Point(362, 192);
             this.grs_sifre.MaxLength = 32767;
             this.grs_sifre.Name = "grs_sifre";
-            this.grs_sifre.Size = new System.Drawing.Size(379, 33);
+            this.grs_sifre.Size = new System.Drawing.Size(284, 27);
             this.grs_sifre.TabIndex = 5;
             this.grs_sifre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.grs_sifre.OnValueChanged += new System.EventHandler(this.grs_sifre_OnValueChanged);
             this.grs_sifre.Enter += new System.EventHandler(this.grs_sifre_Enter);
             this.grs_sifre.Leave += new System.EventHandler(this.grs_sifre_Leave);
             // 
@@ -149,10 +150,17 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+<<<<<<< HEAD
             this.bunifuThinButton21.Location = new System.Drawing.Point(615, 317);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(209, 41);
+=======
+            this.bunifuThinButton21.Location = new System.Drawing.Point(389, 258);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(229, 33);
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
             this.bunifuThinButton21.TabIndex = 6;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -162,9 +170,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(633, 61);
+            this.label2.Location = new System.Drawing.Point(475, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 30);
+            this.label2.Size = new System.Drawing.Size(65, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "GİRİŞ";
             this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label2_MouseMove);
@@ -174,9 +183,10 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(610, 91);
+            this.label3.Location = new System.Drawing.Point(458, 74);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 1);
+            this.label3.Size = new System.Drawing.Size(92, 1);
             this.label3.TabIndex = 8;
             this.label3.Visible = false;
             // 
@@ -185,22 +195,25 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(532, 419);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(399, 340);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(71, 91);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(53, 74);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuImageButton1.TabIndex = 9;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // bunifuImageButton2
             // 
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(790, 428);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(592, 348);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(53, 58);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuImageButton2.TabIndex = 10;
             this.bunifuImageButton2.TabStop = false;
@@ -211,21 +224,24 @@
             this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
             this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(662, 428);
+            this.bunifuImageButton3.Location = new System.Drawing.Point(496, 348);
+            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton3.Size = new System.Drawing.Size(53, 58);
             this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuImageButton3.TabIndex = 11;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(419, 162);
+            this.pictureBox1.Location = new System.Drawing.Point(314, 132);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -233,9 +249,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(419, 228);
+            this.pictureBox2.Location = new System.Drawing.Point(314, 185);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -245,9 +262,10 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(1019, 12);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(764, 10);
+            this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(36, 36);
+            this.bunifuImageButton4.Size = new System.Drawing.Size(27, 29);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuImageButton4.TabIndex = 15;
             this.bunifuImageButton4.TabStop = false;
@@ -272,20 +290,25 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+<<<<<<< HEAD
             this.bunifuThinButton22.Location = new System.Drawing.Point(855, 317);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
+=======
+            this.bunifuThinButton22.Location = new System.Drawing.Point(644, 258);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(128, 41);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(96, 33);
             this.bunifuThinButton22.TabIndex = 16;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.ClientSize = new System.Drawing.Size(1067, 561);
+            this.ClientSize = new System.Drawing.Size(800, 456);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuImageButton4);
             this.Controls.Add(this.pictureBox2);
@@ -300,7 +323,6 @@
             this.Controls.Add(this.grs_eposta);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Npgsql;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +27,7 @@ namespace KSS
         private void Ilanlar_Load(object sender, EventArgs e)
         {
             
+
         }
         public void Baslangic()
         {
@@ -40,11 +43,73 @@ namespace KSS
 
         }
 
+<<<<<<< HEAD
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             KullaniciSayfasi k = new KullaniciSayfasi();
             k.Show();
             this.Hide();
+=======
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=mydb;";
+            NpgsqlConnection conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            string sql = "SELECT ilanbaslik FROM ilanlar";
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                string ilanid = row.Cells["ilanid"].Value.ToString();
+                string sahipid = row.Cells["sahipid"].Value.ToString();
+                string ilanbaslik = row.Cells["ilanbaslik"].Value.ToString();
+                string ilanaciklama = row.Cells["ilanaciklama"].Value.ToString();
+                string ilanfiyat = row.Cells["ilanfiyat"].Value.ToString();
+                string ilanturu = row.Cells["ilanturu"].Value.ToString();
+                string ilantarihi = row.Cells["ilantarihi"].Value.ToString();
+                string pasifaktif = row.Cells["pasifaktif"].Value.ToString();
+                // diğer verileri de burada string olarak tutabilirsiniz
+            }
+        }
+
+
+        private void label_ilanbaslik_Click(object sender, EventArgs e)
+        {
+            //label_ilanbaslik.Text = ilanbaslik;
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            string kelime = bunifuMaterialTextbox1.Text;
+
+            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=mydb;";
+            NpgsqlConnection conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            string sql = "SELECT ilanbaslik FROM ilanlar WHERE ilanbaslik= %@arama% ";
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@arama", kelime);
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
         }
     }
 }

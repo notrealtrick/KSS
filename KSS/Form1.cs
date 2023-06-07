@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace KSS
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         
@@ -25,6 +27,7 @@ namespace KSS
             grs_sifre.Text = "Şifre";
             this.Opacity = 90;
         }
+
 
         private void label2_MouseMove(object sender, MouseEventArgs e)
         {
@@ -106,24 +109,20 @@ namespace KSS
                 this.Hide();
                 
             }
-            if (grs_eposta.Text == "kullanıcı" && grs_sifre.Text == "1111")
-            {
-                Ilanlar i = new Ilanlar();
-                i.Show();
-                this.Hide();
+            else {
+                Uye_Girisi();
             }
+            
         }
+
+
+    
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
             UyeOl a = new UyeOl();
             a.Show();
             this.Hide();
-        }
-
-        private void grs_eposta_OnValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

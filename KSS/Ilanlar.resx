@@ -123,7 +123,32 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
+  <metadata name="ilanid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="sahipid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanbaslik.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanaciklama.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanfiyat.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanturu.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilantarihi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pasifaktif.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+<<<<<<< HEAD
   <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATEAAAApCAYAAABdlx4qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -131,6 +156,21 @@
         MSBNYkCaxIA0iQFpEgPSJAakSQxIkxiQJjEgTWJAmsSANIkBaRID0iQGpEkMSJMYkCYxIE1iQJrEgDSJ
         AWkSA9IkBqRJDEiTGJAmMSBNYkCaxIA0iQFpEgPSJAakSQxIkxiQJjEgTWJAmsSANIkBaRID0iQGpEkM
         CNt981DsGPh25GwAAAAASUVORK5CYII=
+=======
+  <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGAAAAAfCAYAAAAY7MgsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAILSURBVGhD7Zk9rwFBFIa30+l0Op1Op9NpRCMaP0Khlij8
+        CYlKqdSJX0BCg/gmIaHxuf/g3Lyz2Y2Ng3vdHdOc4kkkZkfyPuvMnBnLtm0SzCECDCMCDCMCDCMCDCMC
+        DPNSwO12o+PxSIvFgiaTCc1mM9put8IbkJObF/JDjly+4KmA0+mkJmk0GpTNZimZTFI0GiXLsoQ3ICfk
+        lU6nqVar0Xg8psPhwOb8IAC25vM5tVotikQi7A8IfyMcDlO9XqfpdErX69WXt08Awh+NRlQoFNiJhP+R
+        SqWo3+/7JPgE4M2X8PWC0oTS/iAANR9lh3tICJZqtaoWa08ASg+sSM3/DqFQiLrdLl0uF0cAtkpYrbnB
+        gh6KxSLtdjtHAPar2DJxAwU9xONxVXWUADRasViMHSjoAWVos9k4AvBBmqzvg4VYCUCDgD0qN0jQAyoO
+        clcC9vs9VSoVdqCgh3w+T6vVyhGAzmwwGKi6xA0WgqfZbKreSwkA6/WayuUyO1gIllwup8oPcvcEoBkb
+        DoeUSCTYh4RgQLOLnN0jak8AQGfW6/VkS6oJhN/pdOh8PnuZ+wQAfIkT0VKpxE4ifEYmk1Fv/n344EEA
+        wN8DvUG73VartZwRfQbuAXCZhUstdL1u2bmHFeACW9gq4Zj6/spN+B3L5VKdMuCsjcsXvBQg6EcEGEYE
+        GEYEGEYEGMWmH/bRmoKdnWfwAAAAAElFTkSuQmCC
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
 </value>
   </data>
   <data name="bunifuImageButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2164,8 +2204,32 @@
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAA5SURBVChTY5CSkvqvKCXzX0NS7r+BpMJ/c0ml/3aSKv/d
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA5SURBVChTY5CSkvqvKCXzX0NS7r+BpMJ/c0ml/3aSKv/d
         JFX/+0qq/w+R1PwfLaH9f1QhXRVq/wcA5N6R0+bsLAkAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="ilanid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="sahipid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanbaslik.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanaciklama.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanfiyat.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilanturu.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ilantarihi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pasifaktif.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
