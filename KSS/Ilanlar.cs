@@ -39,5 +39,12 @@ namespace KSS
         {
 
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            KullaniciSayfasi k = new KullaniciSayfasi();
+            k.Show();
+            this.Hide();
+        }
     }
 }

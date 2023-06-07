@@ -101,8 +101,8 @@
             this.grs_eposta.Name = "grs_eposta";
             this.grs_eposta.Size = new System.Drawing.Size(379, 33);
             this.grs_eposta.TabIndex = 4;
-            this.grs_eposta.Text = "E-posta";
             this.grs_eposta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.grs_eposta.OnValueChanged += new System.EventHandler(this.grs_eposta_OnValueChanged);
             this.grs_eposta.Enter += new System.EventHandler(this.grs_eposta_Enter);
             this.grs_eposta.Leave += new System.EventHandler(this.grs_eposta_Leave);
             // 
@@ -127,7 +127,6 @@
             this.grs_sifre.Name = "grs_sifre";
             this.grs_sifre.Size = new System.Drawing.Size(379, 33);
             this.grs_sifre.TabIndex = 5;
-            this.grs_sifre.Text = "Şifre";
             this.grs_sifre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.grs_sifre.Enter += new System.EventHandler(this.grs_sifre_Enter);
             this.grs_sifre.Leave += new System.EventHandler(this.grs_sifre_Leave);
@@ -150,10 +149,10 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(519, 317);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(615, 317);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(305, 41);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(209, 41);
             this.bunifuThinButton21.TabIndex = 6;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -273,7 +272,7 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Transparent;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(858, 317);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(855, 317);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(128, 41);

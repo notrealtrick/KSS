@@ -31,5 +31,12 @@ namespace KSS
         {
 
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            AdminGuncelle A = new AdminGuncelle();
+            A.Show();
+            this.Hide();
+        }
     }
 }

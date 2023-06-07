@@ -21,6 +21,8 @@ namespace KSS
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            grs_eposta.Text = "E-posta";
+            grs_sifre.Text = "Şifre";
             this.Opacity = 90;
         }
 
@@ -41,7 +43,7 @@ namespace KSS
         #region TXT
         private void grs_eposta_Enter(object sender, EventArgs e)
         {
-            if (grs_eposta.Text == "eposta")
+            if (grs_eposta.Text == "E-posta")
                 grs_eposta.Text = "";
 
         }
@@ -49,12 +51,12 @@ namespace KSS
         private void grs_eposta_Leave(object sender, EventArgs e)
         {
             if (grs_eposta.Text == "")
-                grs_eposta.Text = "eposta";
+                grs_eposta.Text = "E-posta";
         }
 
         private void grs_sifre_Enter(object sender, EventArgs e)
         {
-            if (grs_sifre.Text == "sifre")
+            if (grs_sifre.Text == "Şifre")
                 grs_sifre.Text = "";
 
         }
@@ -62,7 +64,7 @@ namespace KSS
         private void grs_sifre_Leave(object sender, EventArgs e)
         {
             if (grs_sifre.Text == "")
-                grs_sifre.Text = "sifre";
+                grs_sifre.Text = "Şifre";
         }
 
         
@@ -114,9 +116,14 @@ namespace KSS
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            KayitOl a = new KayitOl();
+            UyeOl a = new UyeOl();
             a.Show();
             this.Hide();
+        }
+
+        private void grs_eposta_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
