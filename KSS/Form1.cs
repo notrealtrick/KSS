@@ -146,7 +146,7 @@ namespace KSS
         {
 
             // Veritabanı bağlantısı oluşturun
-            string connString = "Server=SERVER_NAME;Port=5432;User Id=user;Password=PASSWORD;Database=DATABASE_NAME;";
+            string connString = "Server=localhost;Port=5432;User Id=user;Password=pass;Database=kss;";
             NpgsqlConnection conn = new NpgsqlConnection(connString);
             conn.Open();
 

@@ -51,7 +51,7 @@ namespace KSS
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=mydb;";
+            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=pass;Database=kss;";
             NpgsqlConnection conn = new NpgsqlConnection(connstring);
             conn.Open();
             string sql = "SELECT ilanbaslik FROM ilanlar";
@@ -86,7 +86,7 @@ namespace KSS
         {
             string kelime = bunifuMaterialTextbox1.Text;
 
-            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=1234;Database=mydb;";
+            string connstring = "Server=localhost;Port=5432;User Id=postgres;Password=pass;Database=kss;";
             NpgsqlConnection conn = new NpgsqlConnection(connstring);
             conn.Open();
             string sql = "SELECT ilanbaslik FROM ilanlar WHERE ilanbaslik= %@arama% ";

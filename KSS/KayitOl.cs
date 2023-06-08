@@ -14,7 +14,7 @@ namespace KSS
 {
     public partial class KayitOl : Form
     {
-        private string _connectionString = "Server=localhost;Port=5432;Database=bmt310;User Id = melih; Password=melih;";
+        private string _connectionString = "Server=localhost;Port=5432;User Id=user;Password=pass;Database=kss;";
 
         public KayitOl()
         {
