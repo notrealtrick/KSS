@@ -43,6 +43,13 @@ namespace KSS
 
         }
 
+<<<<<<< HEAD
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            KullaniciSayfasi k = new KullaniciSayfasi();
+            k.Show();
+            this.Hide();
+=======
         private void label10_Click(object sender, EventArgs e)
         {
 
@@ -102,6 +109,7 @@ namespace KSS
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
         }
     }
 }

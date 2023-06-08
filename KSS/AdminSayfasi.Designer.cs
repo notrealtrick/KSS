@@ -40,12 +40,18 @@
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
+<<<<<<< HEAD
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
+            this.bunifuGradientPanel2.SuspendLayout();
+=======
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.listView1 = new System.Windows.Forms.ListView();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -76,10 +82,16 @@
             this.bunifuImageButton4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
             this.bunifuImageButton4.ImageActive = null;
+<<<<<<< HEAD
+            this.bunifuImageButton4.Location = new System.Drawing.Point(852, 12);
+            this.bunifuImageButton4.Name = "bunifuImageButton4";
+            this.bunifuImageButton4.Size = new System.Drawing.Size(36, 36);
+=======
             this.bunifuImageButton4.Location = new System.Drawing.Point(639, 10);
             this.bunifuImageButton4.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(27, 29);
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bunifuImageButton4.TabIndex = 16;
             this.bunifuImageButton4.TabStop = false;
@@ -92,10 +104,16 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe Script", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
+            this.label2.Location = new System.Drawing.Point(53, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 46);
+=======
             this.label2.Location = new System.Drawing.Point(40, 24);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 37);
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
             this.label2.TabIndex = 2;
             this.label2.Text = "ADMİN";
             // 
@@ -233,6 +251,8 @@
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
+<<<<<<< HEAD
+=======
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -252,6 +272,7 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
             // AdminSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,7 +296,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
+<<<<<<< HEAD
+=======
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
             this.ResumeLayout(false);
 
         }

@@ -35,6 +35,13 @@ namespace KSS
 
         }
 
+<<<<<<< HEAD
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            AdminGuncelle A = new AdminGuncelle();
+            A.Show();
+            this.Hide();
+=======
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -109,6 +116,7 @@ namespace KSS
             {
 
             }
+>>>>>>> f1736005f0af58a7d572caec38ca34d87a6c93f3
         }
     }
 }

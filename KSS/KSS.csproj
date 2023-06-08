@@ -99,6 +99,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGuncelle.Designer.cs">
+      <DependentUpon>AdminGuncelle.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,15 @@
     <Compile Include="UC_Ilanlar.Designer.cs">
       <DependentUpon>UC_Ilanlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UyeOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeOl.Designer.cs">
+      <DependentUpon>UyeOl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminGuncelle.resx">
+      <DependentUpon>AdminGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminSayfasi.resx">
       <DependentUpon>AdminSayfasi.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +178,9 @@
     </Compile>
     <EmbeddedResource Include="UC_Ilanlar.resx">
       <DependentUpon>UC_Ilanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeOl.resx">
+      <DependentUpon>UyeOl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
